@@ -7,7 +7,7 @@ type LoginFormProps = {
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const LoginForm = ({ type, id, title }: LoginFormProps): JSX.Element => {
+const LoginField = ({ type, id, title }: LoginFormProps): JSX.Element => {
 	return (
 		<>
 			<label htmlFor={id}>{title}</label>
@@ -16,4 +16,4 @@ const LoginForm = ({ type, id, title }: LoginFormProps): JSX.Element => {
 	);
 };
 
-export default LoginForm;
+export default LoginField;

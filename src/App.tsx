@@ -15,12 +15,7 @@ function App() {
 	return (
 		<>
 			<Header title="Header" />
-			<Button
-				title="Knapp"
-				clickFunction={function (): void {
-					throw new Error("Function not implemented.");
-				}}
-			/>
+
 			<List items={showCaseList} />
 			<InfoBox />
 

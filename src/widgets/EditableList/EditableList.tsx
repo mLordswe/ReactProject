@@ -10,7 +10,7 @@ export const EditableList = () => {
 	const deleteGrocery = (grocery: string) => {
 		setGroceries(groceries.filter((g) => g !== grocery));
 	};
-	const addGrocery = (grocery: string) => {
+	const addGrocery = () => {
 		setGroceries([...groceries, inputGrocery]);
 	};
 	return (
@@ -24,7 +24,7 @@ export const EditableList = () => {
 					SetInputGrocery(e.target.value);
 				}}
 			/>
-			<button onClick={() => addGrocery(inputGrocery)}>Add groceries</button>
+			<button onClick={() => addGrocery()}>Add groceries</button>
 			<ul>
 				{groceries.map((grocery) => (
 					<li key={grocery}>

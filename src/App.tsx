@@ -7,7 +7,7 @@ import List from "./components/List/List";
 import NumberDisplay from "./components/NumberDisplay/NumberDisplay";
 import { EditableList } from "./widgets/EditableList/EditableList";
 
-import { LoginHandler } from "./widgets/EditableList/LoginHandler/LoginHandler";
+import { LoginForm } from "./widgets/EditableList/LoginForm/LoginForm";
 
 function App() {
 	const showCaseList = ["Apple", "Elephant", "Mac&Cheese", "Airplane"];
@@ -21,7 +21,7 @@ function App() {
 
 			<NumberDisplay index={1} />
 			<EditableList />
-			<LoginHandler />
+			<LoginForm />
 		</>
 	);
 }
